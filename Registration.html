@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Live virtual class</title>
+
+       
+        <style>
+             
+            header{background-color: white;height: 200px;}
+            h1{text-align: center;}
+            nav ul li{display: inline;margin: 50px;}
+            nav ul {background-color: aqua;height: 50px;}
+            footer{background-color: crimson;height: 100px;text-align: start;}
+            h1{text-shadow: 5px 5px 10px rgb(6, 238, 76), 10px 10px 20px rgb(15, 13, 187);}
+        </style>
+        <script>
+            function jfun()
+            {
+               // alert("just for testing")
+               name=form1.t1.value;
+               Designation=form1.t2.value;
+               Email=form1.t3.value;
+               location=form1.t4.value;
+
+               if(name=="")
+               {
+                alert("please enter the name")
+                return false;
+               }
+               
+               else if(Designation=="")
+               {
+                alert("please enter the Designation")
+                return false;
+               }
+              
+              else if(Email=="")
+               {
+                alert("please enter the Email")
+                return false;
+               }
+              
+              else if(Location=="")
+               {
+                alert("please enter the Location")
+                return false;
+               }
+               else
+               {
+                return true
+                alert("Go a head")
+               }
+               
+               
+            }
+           
+        </script>
+      
+
+    </head>
+<body >
+    
+<header style="background-image: url(./Imeages/images3.jpeg);">
+    <h1 style="color: brown;">Entertainment</h1>
+
+</header>
+<nav>
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="serveses.html">serveses</a></li>
+        <li><a href="Courses.html">Courses</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Registration.html">Registration</a></li>
+        <li><a href="Result.html">Result</a></li>
+        <li><a href="Contect.html">Contect</a></li>
+    </ul>
+</nav>
+<section>
+    <article>
+        <center>
+  <div style="background-color: gray;width: 50%; border-radius: 30px;">
+   
+    <h1 style="background-color: aqua;height: 50px;border-radius: 20px;">Registation form</h1>
+    
+		
+
+    <form name="form1" onsubmit="return jfun() " action="thanks.html">
+        <pre>
+            <!--
+        <label for="fname">First Name</label>
+        <input type="text" id="fname"Name="fname" placeholder="enter your name" required><br>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" placeholder="enter your lastname"><br>
+        <label for="designation">Designation</label>
+        <input type="text" id="designation" name="designation" placeholder="enter your designation "required><br>
+            -->
+        Name        <input type="text" name="t1" placeholder="enter your name" > <br>
+        Designation <input type="text" name="t2" placeholder="enter your designation" > <br>
+        Email       <input type="text"name="t3" placeholder="enter your Email"> <br>
+        location     <input type="text" name="t4"placeholder="enter your location" > <br>
+                     <input type="submit" value="Register">
+       <!-- <p>Enter your Gender</p>
+        <input type="radio" id="sex" name="sex" value="Male">
+        <label for="sex">Male</label><br>z
+        <input type="radio" id="sex" name="sex" value="Female">
+        <label for="sex">Female</label><br>
+        <input type="radio" id="sex" name="sex" value="Other">
+        <label for="sex">Other</label><br>
+        <p>Choose your Favorite language</p>
+        <input type="checkbox" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="checkbox" id="css" name="fav_language" value="css">
+        <label for="CSS">CSS</label><br>
+        <input type="checkbox" id="javascript" name="fav_language" value="javascript">
+        <label for="html">Javascript</label><br>
+       
+
+    -->
+    </pre>
+</div>
+</center>
+    </form>
+    
+ 
+    </article>
+</section>
+<footer>
+ <h3>Developed by Farooq</h3>
+</footer>
+
+</body>
+</html>

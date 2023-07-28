@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Live virtual class</title>
+        <style>
+            header{background-color: white;height: 200px;}
+            h1{text-align: center;}
+            nav ul li{display: inline;margin: 50px;}
+            nav ul {background-color: aqua;height: 50px;}
+            footer{background-color: crimson;height: 100px;text-align: start;}
+
+        </style>
+        <script>
+            function jfun2()
+           {
+              // alert("welcome to my website")
+             // document.open("<h1>Welcome to my website!!!!</h2>")
+              //  window.open("welcom.html","","width=220,height=100");
+              //prompt("please enter the your email for subscration");
+              var country=prompt("please enter your country name")
+              if(country=="INDIA")
+              {
+                alert("you got  80% discount")
+              }
+              else
+              {
+                alert("no discount")
+              }
+           }
+       </script>
+       <script>
+        function jfun2(){
+            var m=parseInt(frm2.t1.value);
+            var e=parseInt(frm2.t2.value);
+            var c=parseInt(frm2.t3.value);
+            var tmarks=m+e+c;
+            var pmarks=tmarks/3;
+            var max;
+            if(m>e && m>c){
+                max=m;
+            }
+            else if(e>m && e>c){
+                max=e;
+            }
+            else{
+                max=c;
+            }
+            frm2.t4.value=tmarks;
+            frm2.t5.value=pmarks;
+            frm2.t6.value=max;
+        }
+       </script>
+    </head>
+<body >
+<header style="background-image: url(./Imeages/images3.jpeg);">
+    <h1 style="color: brown;">Entertainment</h1>
+
+</header>
+<nav>
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="serveses.html">serveses</a></li>
+        <li><a href="Courses.html">Courses</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="Result.html">Result</a></li>
+        <li><a href="Registration.html">Registration</a></li>
+        <li><a href="Contect.html"></a></li>
+    </ul>
+</nav>
+<section>
+    <article>
+  <div  class="form-group" style="background-color: red;height: 500px;"> 
+    <h1 style="text-align: center;"> Result </h1>
+    <form name="frm2">
+        <pre >
+          <label style="font-size: 30px;font-style: oblique;"> Name </label>        <input type="text" placeholder="Enter your Name"> <br>
+           <h1 style="text-align:center; font-size: 30px;">Marks:</h1>  <br>
+
+           <label style="font-size: 20px;font-style: italic;"> Maths     <input type="text" name="t1"> English<input type="text" name="t2"> Computer<input type="text" name="t3">  </label> 
+           <h1 style="text-align: center;font-size: 30px;"> Result:</h1> <br>
+           <label style="font-size: 20px;font-style: italic;"> Total marks <input type="text" name="t4"> % Marks<input type="text" name="t5"> Max Marks<input type="text" name="t6"></label>
+            <input type="button" value="Result" onclick="jfun2()">
+            <center>
+            <button type="button" class="btn btn-outline-primary">Primary</button><br>
+           <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        </center>
+        </pre>
+        </form>
+  </div>
+    </article>
+</section>
+<footer>
+ <h3>Developed by Farooq</h3>
+</footer>
+</body>
+</html>
